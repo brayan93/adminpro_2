@@ -14,6 +14,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { ProgressComponent } from './progress/progress.component';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
 
 // Rutas
 import { PAGES_ROUTES } from './pages.routes';
@@ -25,6 +26,7 @@ import { ComponentsModule } from '../components/components.module';
         DashboardComponent,
         Graficas1Component,
         ProgressComponent,
+        AccoutSettingsComponent,
     ],
     exports: [
         DashboardComponent,
