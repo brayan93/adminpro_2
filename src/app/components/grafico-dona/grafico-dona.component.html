@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">{{ graficoObj.leyenda }}</h4>
+        <div>
+            <div>
+                <div style="display: block">
+                    <canvas baseChart
+                        [data]="graficoObj.data"
+                        [labels]="graficoObj.labels"
+                        [chartType]="graficoObj.type">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

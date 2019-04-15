@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 // Rutas
@@ -23,7 +24,8 @@ import { PagesModule } from './pages/pages.module';
     imports: [
         BrowserModule,
         APP_ROUTES,
-        PagesModule
+        PagesModule,
+        FormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
