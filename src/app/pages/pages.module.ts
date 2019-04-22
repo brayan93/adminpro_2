@@ -19,6 +19,8 @@ import { AccoutSettingsComponent } from './accout-settings/accout-settings.compo
 // Rutas
 import { PAGES_ROUTES } from './pages.routes';
 import { ComponentsModule } from '../components/components.module';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
     declarations: [
@@ -27,6 +29,8 @@ import { ComponentsModule } from '../components/components.module';
         Graficas1Component,
         ProgressComponent,
         AccoutSettingsComponent,
+        PromesasComponent,
+        RxjsComponent,
     ],
     exports: [
         DashboardComponent,

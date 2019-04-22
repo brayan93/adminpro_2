@@ -9,7 +9,7 @@ import {
 
 @NgModule({
     imports: [
-    CommonModule
+        CommonModule
     ],
     providers: [
         SettingsService,
