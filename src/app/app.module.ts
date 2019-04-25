@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 // Rutas
@@ -28,7 +28,8 @@ import { ServiceModule } from './services/service.module';
         APP_ROUTES,
         PagesModule,
         ServiceModule,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
