@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -5,6 +6,8 @@ import { BrowserModule } from '@angular/platform-browser';
 // Modulos
 import { SharedModule } from '../shared/shared.module';
 import { ChartsModule } from 'ng2-charts';
+// Pipe modulo
+import { PipesModule } from '../pipes/pipes.module';
 
 // Componentes
 import { PagesComponent } from './pages.component';
@@ -15,6 +18,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
+import { ProfileComponent } from './profile/profile.component';
 
 // Rutas
 import { PAGES_ROUTES } from './pages.routes';
@@ -31,6 +35,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         AccoutSettingsComponent,
         PromesasComponent,
         RxjsComponent,
+        ProfileComponent,
     ],
     exports: [
         DashboardComponent,
@@ -38,12 +43,14 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         ProgressComponent
     ],
     imports: [
+        CommonModule,
         SharedModule,
         PAGES_ROUTES,
         FormsModule,
         ChartsModule,
         BrowserModule,
-        ComponentsModule
+        ComponentsModule,
+        PipesModule,
     ],
     providers: []
 })

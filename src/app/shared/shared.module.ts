@@ -3,6 +3,9 @@ import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 
+// Pipes
+import { PipesModule } from '../pipes/pipes.module';
+
 // Componentes
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { HeaderComponent } from './header/header.component';
@@ -12,7 +15,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     declarations: [
         BreadcrumbsComponent,
         HeaderComponent,
-        SidebarComponent
+        SidebarComponent,
     ],
     exports: [
         BreadcrumbsComponent,
@@ -22,7 +25,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     imports: [
         RouterModule,
         BrowserModule,
-        CommonModule
+        CommonModule,
+        PipesModule
     ]
 })
 export class SharedModule { }
