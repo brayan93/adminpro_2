@@ -25,6 +25,7 @@ import { PAGES_ROUTES } from './pages.routes';
 import { ComponentsModule } from '../components/components.module';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
 
 @NgModule({
     declarations: [
@@ -36,6 +37,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         PromesasComponent,
         RxjsComponent,
         ProfileComponent,
+        UsuariosComponent,
     ],
     exports: [
         DashboardComponent,

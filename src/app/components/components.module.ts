@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
+// Pipes
+import { PipesModule } from '../pipes/pipes.module';
 
 // Plugins
 import { ChartsModule } from 'ng2-charts';
@@ -7,19 +11,24 @@ import { ChartsModule } from 'ng2-charts';
 // Componentes
 import { GraficoDonaComponent } from './grafico-dona/grafico-dona.component';
 import { IncrementadorComponent } from './incrementador/incrementador.component';
+import { ModalUploadComponent } from './modal-upload/modal-upload.component';
 
 @NgModule({
     declarations: [
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        ModalUploadComponent
     ],
     exports: [
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        ModalUploadComponent
     ],
     imports: [
         FormsModule,
-        ChartsModule
+        ChartsModule,
+        CommonModule,
+        PipesModule
     ]
 })
 export class ComponentsModule { }
