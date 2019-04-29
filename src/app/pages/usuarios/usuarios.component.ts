@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../../models/usuario.model';
 import { UsuarioService } from '../../services/service.index';
 import { ModalUploadService } from '../../components/modal-upload/modal-upload.service';
+import { ImagenPipe } from '../../pipes/imagen.pipe';
 
 declare var swal: any;
 
@@ -87,6 +88,9 @@ export class UsuariosComponent implements OnInit {
             if (borrar) {
                 this.usuarioService.borrarUsuario(usuario._id).subscribe(resp => {
 
+                    if (this.desde >= this.totalRegistro - 1) {
+                        this.desde = 0;
+                    }
                     this.cargarUsuarios();
 
                 });
