@@ -10,7 +10,8 @@ import {
     SubirArchivoService,
     HospitalService,
     MedicoService,
-    AdminGuard
+    AdminGuard,
+    VerificaTokenGuard
 } from './service.index';
 import { ModalUploadService } from '../components/modal-upload/modal-upload.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -23,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     providers: [
         AdminGuard,
         LoginGuardGuard,
+        VerificaTokenGuard,
         UsuarioService,
         HospitalService,
         MedicoService,

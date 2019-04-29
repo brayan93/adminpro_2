@@ -24,7 +24,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ],
     imports: [
         RouterModule,
-        BrowserModule,
         CommonModule,
         PipesModule
     ]
